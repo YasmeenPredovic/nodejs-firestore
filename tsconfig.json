@@ -1,0 +1,22 @@
+{
+  "extends": "./node_modules/gts/tsconfig-google.json",
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "outDir": "build",
+    "lib": [
+      "es2016",
+      "dom"
+    ],
+    "useUnknownInCatchVariables": false,
+  },
+  "include": [
+    "dev/src/*.d.ts",
+    "dev/src/*.ts",
+    "dev/src/**/*.ts",
+    "dev/test/*.ts",
+    "dev/test/**/*.ts",
+    "dev/system-test/*.ts",
+    "dev/conformance/*.ts",
+    "types/*.d.ts"
+  ]
+}
